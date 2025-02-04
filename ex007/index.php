@@ -37,12 +37,19 @@
  $e = 5;
  $f = 5;
  $g = 3;
- 
+
  echo "<br><h3> Maior ou igual a, menor ou igual a </h3>";
  echo($e >= $f) ? "E é maior ou igual a F." : "E não é maior ou igual a F.";
  echo "<br><br>";
  echo ($e <= $g) ? "E é menor ou igual a G." : "E não é menor ou igual a G.";
 
+
+/* git init
+git add .
+git commit -m "nome do commit"
+git branch -M main
+git remote set-url origin "URL"
+git push -u origin main*/
 
 ?>
 
