@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navega{
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: 1px solid black;
+}
+
+.bnav{
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    height: 50px;
+    margin-left: 5px;
+}
+
+#enun{
+    margin: 60px;
+    width: 600px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+h1{
+    text-align: center;
+}
+
+input, label{
+    display: block;
+}
+
+.posiform{
+display: flex;
+justify-content: center;
+}
+
+.entradas{
+    margin-bottom: 10px;
+}
+
+#rphp{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+input[type="number"]{
+    width: 180px;
+}
+
+input[type="submit"]{
+    justify-self: flex-end;
+}
+
