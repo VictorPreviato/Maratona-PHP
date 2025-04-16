@@ -29,7 +29,7 @@ De 9 a 10: "Aprovado com Distinção"</p>
     <form action="./Notas.php" method="post">
         <div>
             <label for="nota">Insira sua nota</label>
-            <input type="number" name="num" required>
+            <input type="number" name="num" min="0.0" step="0.1" required>
         </div>
 
         <div>
