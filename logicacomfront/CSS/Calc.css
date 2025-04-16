@@ -10,6 +10,8 @@
     width: 100%;
     top: 0;
     border-bottom: 1px solid black;
+    background-color: #3a3951;
+    
 }
 
 .bnav{
@@ -17,10 +19,16 @@
     border: none;
     font-size: 15px;
     height: 50px;
-    margin-left: 5px;
+    color: white;
+    padding: 5px;
 }
 
-#enun{
+.bnav:hover{
+    background-color:	hsl(243, 17%, 50%);
+    cursor: pointer;
+}
+
+.enun{
     margin: 60px;
     width: 600px;
     margin: auto;
@@ -28,34 +36,33 @@
     margin-bottom: 40px;
 }
 
-h1{
+.enum{
     text-align: center;
 }
 
-input, label{
-    display: block;
-}
-
-.posiform{
-display: flex;
-justify-content: center;
-}
-
-.entradas{
-    margin-bottom: 10px;
-}
-
-#rphp{
-    margin-top: 10px;
+.flexform{
     display: flex;
     justify-content: center;
 }
 
-input[type="number"]{
-    width: 180px;
+input, label, p{
+    display: block;
+    margin-bottom: 5px;
 }
 
 input[type="submit"]{
-    justify-self: flex-end;
+width: 200px;
+height: 40px;
+border-radius: 12px;
+border: none;
+background-color:#3a3951;
+color: #dfdde3;
 }
 
+input[type="number"]{
+width: 200px;
+height: 30px;
+border-radius: 5px;
+border: 1px solid #868fac;
+padding: 5px;
+}

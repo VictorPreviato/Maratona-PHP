@@ -14,7 +14,7 @@
     <button onclick="document.location='./Notas.php'" class="bnav">Notas de Alunos</button>
 </div>
 
-<div id="enun">
+<div class="enun">
 <h1>Calculadora de Desconto</h1>
 <br>
 <p>Objetivo: Cálculos matemáticos e uso de variáveis.
@@ -26,44 +26,37 @@ Dica: Use variáveis para armazenar o preço e a porcentagem do
 desconto e calcule o valor final.</p>
 </div>
 
+<div class="flexform">
+    <form action="./CalcDesc.php" method="post">
+        <div>
+            <label for="valor">Insira o valor do produto</label>
+                <input type="number" name="valor" min="0.00" step="0.01" placeholder="00.00" required>
+        </div>
 
-<div class="posiform">
-<form action="./CalcDesc.php" method="POST">
-    <div class="entradas">
-    <label for="preco">Valor do produto em R$:</label>
-    <input type="number" min="0.00" max="10000.00" step="0.01" placeholder="00,00" name="valor">
-    </div>
+        <div>
+            <label for="desconto">Percentual de Desconto</label>
+            <input type="number" name="desconto" required>
+        </div>
 
-    <div class="entradas">
-        <label for="desconto">Insira o desconto %</label>
-        <input type="number" name="desconto" >
-    </div>
+        <div>
+            <input type="submit">
+        </div>
 
-    <div>
-    <input type="submit">
-    </div>
 
-</form>
+    </form>
+
 </div>
 
-<div id="rphp">
+<div class="flexform">
 <?php 
+        
+        if(isset($_POST["valor"])){
+        $VT =  $_POST["valor"] - ($_POST["valor"] * ($_POST["desconto"] / 100));
+        
+        echo "O valor do seu produto após desconto de " . $_POST["desconto"] . "% é R$" . number_format($VT,2,',','.') . "!"
+    ;}
 
-
-if(isset($_POST["valor"]) && isset($_POST["desconto"])){
-    $VT = $_POST["valor"] - ($_POST["valor"] * ($_POST["desconto"] / 100));
-    }
-    if(isset($_POST["valor"]) && isset($_POST["desconto"])){
-    $VCON = number_format($VT,2,',','.');
-    }
-    
-    if(isset($_POST["valor"]) && isset($_POST["desconto"])){
-        echo "O valor do seu produto após desconto é R$" . $VCON . "!";
-    }
-    
-?>
-
+    ?>
 </div>
-
 </body>
 </html>
