@@ -30,7 +30,7 @@ desconto e calcule o valor final.</p>
     <form action="./CalcDesc.php" method="post">
         <div>
             <label for="valor">Insira o valor do produto</label>
-                <input type="number" name="valor" min="0.00" step="0.01" placeholder="00.00" required>
+                <input type="number" name="valor" min="0.00" step="0.01" placeholder="00,00" required>
         </div>
 
         <div>
